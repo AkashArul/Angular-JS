@@ -1,0 +1,65 @@
+<html>
+    <head></head>
+    <body> <p>calculator</p>
+        
+        Number 1 <input id="num1" type="number"><br><br>
+        Number 2 <input id="num2" type="number">
+        <br><br>
+        Result <input id="check" type="text" >
+        <br><br>
+        <button type="button" id="Plus" onclick="cal('plus')">+</button>
+        <button type="button" id="Minus" onclick="cal('minus')">-</button>
+        <button type="button" id="multi" onclick="cal('multi')">*</button>
+        <button type="button" id="div" onclick="cal('div')">/</button>
+        <script>
+        function cal(acttype){
+            let a;
+            let b;
+            let x;
+
+            if(acttype== 'plus'){
+
+                let a = document.getElementById("num1").value;
+            let b= document.getElementById("num2").value;
+            
+             x = +a + +b;
+             document.getElementById("check").value = x;
+             console.log("Result");
+             console.log(x);
+             
+            }
+            else if (acttype == 'minus'){
+                let a = document.getElementById("num1").value;
+            let b= document.getElementById("num2").value;
+            
+           x = a-b;
+           document.getElementById("check").value = x;
+           console.log(x);
+           console.log("Result");
+            }
+
+            else if(acttype == 'multi')
+            {
+                let a = document.getElementById("num1").value;
+            let b= document.getElementById("num2").value;
+           x = a*b;
+           document.getElementById("check").value = x;
+           console.log(x);
+           console.log("Result");
+            }
+
+        else if(acttype == 'div') {
+            let a = document.getElementById("num1").value;
+            let b= document.getElementById("num2").value;
+           x = a/b;
+           document.getElementById("check").value = x;
+           console.log(x);
+           console.log("Result");
+        }
+        }    
+        
+        
+        </script>
+    </body>
+</html>
+
