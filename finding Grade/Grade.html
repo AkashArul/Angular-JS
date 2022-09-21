@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Finding Grade</title>
+        <style>
+            form{
+                border: 3px solid rgb(132, 204, 214);
+                border-radius: 15px;
+                margin: 10px 350px 30px 350px;
+            }
+            label{
+                font-size: medium;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bolder;
+            }
+            h3{
+                font-size: large;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bolder;
+            }
+            input{
+                border: 2px solid rgb(72, 64, 64);
+                border-radius: 3px;
+            }
+            button{
+                margin-bottom: 20px;
+                border-radius: 3px;
+                border: 2px solid  rgb(0, 0, 0);
+                background-color: rgba(22, 105, 213, 0.9);
+                padding: 5px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px 50px 10px 50px;
+            }
+        </style>
+    </head>
+    <body><center>
+            <form>
+                <div>
+                    <h1>Find Student Grade</h1>
+                    <label>Student Roll :</label>
+                    <input type="text" id="roll" class="details" style="margin-left: 15px;"><br><br>
+                    <label style="margin-left: -15px;">Student Name :</label>
+                    <input type="text" id="name" class="details" style="margin-left: 15px;"><br><br>
+                    <label style="margin-left: -6px;">Student Class :</label>
+                    <input type="text" id="class" class="details" style="margin-left: 16px;"><br><br>
+                    <label style="margin-left: -20px;">Student Section :</label>
+                    <input type="text" id="section" class="details" style="margin-left: 15px;"><br><br>
+                    <label style="margin-left: 15px;">Total Mark :</label>
+                    <input type="number" id="mark" class="details" style="margin-left: 15px;"><br><br>
+                    <button id="solve" type="button" onclick="percentage()" style="border: 2px solid black; border-radius: 10px">Find Grade</button><br><br>
+                    <button >Reset</button>
+                </div>
+            </form>
+            
+            <table style="margin-left: 125px;">
+                <tr>
+                    <th>Student Roll</th>
+                    <th>Student Name</th>
+                    <th>Student Class</th>
+                    <th>Student Section</th>
+                    <th>Total Mark</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td id="droll"></td>
+                    <td id="dname"></td>
+                    <td id="dclass"></td>
+                    <td id="dsec"></td>
+                    <td id="dmark"></td>
+                    <td id="dgarde"></td>
+                </tr>
+            </table>
+            
+            </center>
+            <script src="fgrade.js"></script> 
+    </body>
+</html>
