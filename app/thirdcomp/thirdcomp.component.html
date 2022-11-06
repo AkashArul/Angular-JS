@@ -1,0 +1,22 @@
+
+<div id="ng" *ngIf= "forng == true">
+    <h3>Printed the Student Details using NG-FOR and Change color to column usnig NG-STYLE</h3>
+    <h2>STUDENT LIST Using NG-FOR & STYLE</h2>
+    <div><P></P>
+      <table>
+        <tr >
+          <th>Student Name</th>
+          <th>Student ID</th>
+          <th>Student Age</th>
+          <th>Student Class</th>
+        </tr>
+        <tr  *ngFor="let std of slist" >
+          <td [ngStyle]= "{'color': 'blue'}"> {{std.Sname | uppercase }}</td>
+          <td [ngStyle]= "{'color': 'red'}"> {{std.Sid}}</td>
+          <td [ngStyle]= "{'color': 'yellow'}">{{std.Sage}}</td>
+          <td [ngStyle]= "{'color': 'green'}"> {{std.Sclass}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <app-secondcomp [stdunt]="sdtlist"></app-secondcomp>

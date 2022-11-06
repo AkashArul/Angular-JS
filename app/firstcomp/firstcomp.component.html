@@ -1,0 +1,28 @@
+
+
+<!--HOME-->
+<br>
+
+<div id="form" *ngIf= "forms == true" style="border: 2px solid black; margin-right: 500px;margin-left: 350px;">
+  <h3>Creating a Form using NG-IF</h3>  
+  <button id ="btn1" (click)= "sign()">Sign-in</button>
+  <button (click)= "creat()" >Sign-up</button><br><br>
+  <div *ngIf= "signin == true" >
+      <label>Email :</label>  
+      <input type="text" id="email"><br><br>
+      <label>Password :</label>         
+      <input type="password" id="pass"><br><br>
+      <button id="btn-l" type="reset" >login </button>
+  <button>Clear</button><br><br>
+  </div>   
+  <div *ngIf= "create == true">
+      <label>First Name :</label>
+      <input type="text" id="pass"><br><br>
+      <label>Last Name :</label>
+      <input type="text" id="pass"><br><br>
+      <label>Password :</label>
+      <input type="password" id="pass"><br><br>
+      <button id="btn-l" >create </button>
+      <button>Clear</button><br><br>
+  </div>
+</div> 

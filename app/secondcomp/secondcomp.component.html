@@ -1,0 +1,36 @@
+
+
+  <div>
+    <div id="pipes" *ngIf= "pipe ==true" >
+      <pre id="dateFormat">Full Date         :    {{todayDate}}
+    Short Date      :    {{todayDate | date:'shortDate'}} 
+    Medium Date  :    {{todayDate | date:'mediumDate' | uppercase}} 
+    Full Date         :    {{todayDate | date:'fullDate' | uppercase}}  
+    Time                :    {{todayDate | date:'HH:MM'}}
+    Full Time         :    {{todayDate | date:'hh:mm:ss a'}}
+    No Formating :    {{amount}}
+    Formating       :    {{amount | number :'2.2-2'}}
+    Message           :    {{message}}
+    Lower case      :    {{message | lowercase}}
+    Upper case      :    {{message | uppercase}}
+      </pre>
+    </div>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Class</th>
+          <th>Mark</th>
+        </tr>
+        <tr *ngFor="let pep of stdunt">
+          <td>{{pep.name}}</td>
+          <td>{{pep.subject}}</td>
+          <td>{{pep.class}}</td>
+          <td>{{pep.mark}}</td>
+        </tr>
+      </table>
+    </div>
+  
+ 
