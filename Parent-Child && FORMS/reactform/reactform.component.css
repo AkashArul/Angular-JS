@@ -1,0 +1,44 @@
+form{
+    border-radius: 5px;
+    border: 2px solid brown;
+    padding: 10px;
+    margin-right: 30%;
+    margin-left: 20%;
+    
+}
+h2{
+    margin-left :40%;
+}
+div{
+    padding: 10px;
+    margin: 10px;
+}
+#cont{
+    position: relative;
+    left: 50px;
+}
+#name{
+    margin-left: 100px;
+}
+#address{
+    margin-left: 85px;
+}
+#phone{
+    margin-left: 75px;
+}
+#age{
+    margin-left: 110px;
+}
+#email{
+    margin-left: 100px;
+}
+input{
+    border: 2px solid black;
+    border-radius: 4px;
+    
+}
+button{
+    border-radius: 4px;
+    border: 2px solid green;
+    margin-left: 40px;
+}

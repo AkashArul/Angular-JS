@@ -1,0 +1,9 @@
+#div1{
+    right:  0%;
+    left : 0;
+}
+#div2{
+    position: absolute;
+    right: 0%;
+    top : 0;
+}

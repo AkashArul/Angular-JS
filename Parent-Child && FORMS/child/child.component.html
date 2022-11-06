@@ -1,0 +1,16 @@
+<p>child works!</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Roll no</th>
+        <th>class</th>
+        <th>mark</th>
+    </tr>
+    <tr *ngFor= "let det of emptable">
+        <th>{{det.Name}}</th>
+        <th>{{det.rollno}}</th>
+        <th>{{det.class}}</th>
+        <th>{{det.mark}}</th>
+        <th><button (click)= "del(det.rollno)">Delete</button></th>
+    </tr>
+</table>

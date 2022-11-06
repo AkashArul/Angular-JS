@@ -1,0 +1,54 @@
+<div> 
+    <h1>Template Forms</h1>
+    <form #formitems="ngForm" (ngSubmit)= "addval(formitems)" id="form1" >
+        <div id="cont"><div>
+            <label for="name" name="name">Name:</label>
+            <input type="text" name="name" id="name" #name="ngModel" required ngModel>
+        </div>
+        <div>
+            <label for="address" name="address">Address:</label>
+            <input type="text" name="address" id="address" minlength="10" required #address="ngModel"  ngModel>
+        </div>
+        <div>
+            <label for="email" name="email">Email:</label>
+            <input type="text" name="email" id="email" #email="ngModel" required email  ngModel>
+        </div><div>
+        <button [disabled]= "!formitems.valid == true">Submit</button>
+    </div>
+    </div>
+    </form>
+</div>
+<div>
+
+<pre>Name : {{name.value}}</pre>
+<pre>Address : {{address.value}}</pre>
+<pre>email : {{email.value}}</pre>
+</div>
+<table>
+    <tr>
+        <th>Heading</th>
+        <th>Valid</th>
+        <th>Invalid</th>
+        <th>Touched</th>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td>{{name.valid}}</td>
+        <td>{{name.invalid}}</td>
+        <td>{{name.touched}}</td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>{{address.valid}}</td>
+        <td>{{address.invalid}}</td>
+        <td>{{address.touched}}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{{email.valid}}</td>
+        <td>{{email.invalid}}</td>
+        <td>{{email.touched}}</td>
+    </tr>
+</table>
+
